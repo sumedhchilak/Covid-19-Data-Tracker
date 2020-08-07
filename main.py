@@ -16,7 +16,7 @@ target_df = target_df[['Country Name', 'Total Cases', 'Total Deaths', 'Total Rec
 #target_df = target_df.drop([230, 229])
 last_idx = target_df.index[-1]
 target_df = target_df.drop([last_idx, last_idx-1])
-#Issue 4 Inconsistent Country Name
+#Issue 4 Inconsistent Country Names
 target_df['Country Name'] = target_df['Country Name'].str.replace('\[.*\]','')
 #Issue 5 Extra Value("No Data") in Column 4
 target_df['Total Recoveries'] = target_df['Total Recoveries'].str.replace('No data','0')

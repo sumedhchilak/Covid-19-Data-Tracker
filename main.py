@@ -27,6 +27,6 @@ target_df['Total Cases'] = pd.to_numeric(target_df['Total Cases'])
 target_df['Total Deaths'] = pd.to_numeric(target_df['Total Deaths'])
 target_df['Total Recoveries'] = pd.to_numeric(target_df['Total Recoveries'])
 
-#Step 3 Export The Data
+#Step 3 Export The Data to be viewed in Tableau, where the data will be modelled
 target_df.to_csv(r'covid19_dataset.csv')
 target_df.to_excel(r'covid19_dataset.xlsx')
